@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+</head>
+<body>
+<form id="form" cf-form>
+    <input type="text" name="name" value="" id="name" cf-questions="您的姓名是？" />
+    <input type="text" name="phone" value="" id="phone" cf-questions="您的电话是？" />
+    <input type="text" name="weixin" value="无" id="weixin" cf-questions="您的微信号是？（可选）" />
+    <fieldset cf-questions="您从哪块发现的我们？">
+        <label for="intro-yes">58同城
+            <input type="radio" name="cfc-intro" id="intro-yes" value="yes">
+        </label>
+
+        <label for="intro-no">贝壳
+            <input type="radio" name="cfc-intro" id="intro-no" value="no">
+        </label>
+
+        <label for="intro-disabled">安居客
+            <input type="radio" name="cfc-intro" id="intro-disabled" value="ignore">
+        </label>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+<script type="text/javascript" src="conversational-form.min.js"></script>
+</body>
+</html>
